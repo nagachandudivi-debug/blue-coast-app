@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y9cU60YjnCk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nagud\\OneDrive\\Desktop\\Blue coast app\\backend\\backend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nagud\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
+    "C:\\Users\\nagud\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

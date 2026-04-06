@@ -1,0 +1,148 @@
+.ola-hero {
+  position: relative;
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 6.5rem 1.5rem 4rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .ola-hero {
+    align-items: center;
+    padding: 7rem 2rem 5rem;
+  }
+}
+
+.ola-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 40%;
+  transform: scale(1.02);
+}
+
+.ola-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      105deg,
+      rgba(6, 18, 22, 0.88) 0%,
+      rgba(6, 18, 22, 0.55) 45%,
+      rgba(6, 18, 22, 0.4) 100%
+    ),
+    radial-gradient(
+      ellipse 80% 60% at 20% 40%,
+      rgba(20, 184, 166, 0.12) 0%,
+      transparent 55%
+    );
+}
+
+.ola-hero__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.ola-hero__badge {
+  display: inline-block;
+  margin: 0 0 1.25rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.ola-hero__title {
+  margin: 0 0 1.25rem;
+  max-width: 14ch;
+  font-size: clamp(2.65rem, 8vw, 4.25rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: var(--ola-white);
+}
+
+.ola-hero__title-line {
+  display: block;
+}
+
+.ola-hero__accent {
+  display: block;
+  color: var(--ola-aqua);
+  text-shadow: 0 0 40px rgba(94, 234, 212, 0.35);
+}
+
+.ola-hero__sub {
+  margin: 0 0 2rem;
+  max-width: 36rem;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 400;
+}
+
+.ola-hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.ola-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.95rem 1.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+.ola-hero__btn:active {
+  transform: scale(0.98);
+}
+
+.ola-hero__btn--primary {
+  background: linear-gradient(135deg, var(--ola-teal) 0%, var(--ola-teal-deep) 100%);
+  color: #042f2e;
+  box-shadow: 0 12px 32px rgba(45, 212, 191, 0.35);
+}
+
+.ola-hero__btn--primary:hover {
+  box-shadow: 0 16px 40px rgba(45, 212, 191, 0.45);
+}
+
+.ola-hero__btn--ghost {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--ola-white);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+}
+
+.ola-hero__btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.ola-hero__hours {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.02em;
+}

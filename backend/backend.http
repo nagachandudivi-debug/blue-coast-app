@@ -1,0 +1,15 @@
+@backend_HostAddress = http://localhost:5055
+
+### All categories
+GET {{backend_HostAddress}}/api/categories
+Accept: application/json
+
+### All menu items
+GET {{backend_HostAddress}}/api/menuitems
+Accept: application/json
+
+### Menu items in category 1 (Burritos)
+GET {{backend_HostAddress}}/api/menuitems/category/1
+Accept: application/json
+
+###

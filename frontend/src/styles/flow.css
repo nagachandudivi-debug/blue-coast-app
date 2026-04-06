@@ -1,0 +1,49 @@
+.flow-page {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 1.25rem 3.5rem;
+}
+
+.flow-page__title {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.75rem, 4vw, 2.15rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--ola-ink);
+}
+
+.flow-page__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.15s, transform 0.1s;
+}
+
+.flow-page__btn:active {
+  transform: scale(0.98);
+}
+
+.flow-page__btn--primary {
+  background: linear-gradient(135deg, var(--ola-teal), var(--ola-teal-deep));
+  color: #042f2e;
+  box-shadow: 0 10px 28px rgba(45, 212, 191, 0.3);
+}
+
+.flow-page__btn--primary:hover {
+  filter: brightness(1.05);
+}
+
+.flow-page__discount-msg {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ola-teal-deep);
+}
