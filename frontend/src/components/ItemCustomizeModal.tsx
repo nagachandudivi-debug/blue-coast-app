@@ -82,6 +82,7 @@ export function ItemCustomizeModal({ product, onClose }: ItemCustomizeModalProps
   }
 
   function addToCartAndClose() {
+    if (!product) return
     addToCart(
       {
         id: product.id,

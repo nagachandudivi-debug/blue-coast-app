@@ -82,6 +82,8 @@ export function PaymentPage() {
     [subtotal, tipPercent],
   )
 
+  const summaryCustomer = checkoutCustomer ?? completedOrder?.customer
+
   if (cartWasEmptyOnEnter.current) {
     return <Navigate to="/cart" replace />
   }
@@ -280,8 +282,14 @@ export function PaymentPage() {
       <section className="payment-page__summary" aria-label="Totals">
         <h2 className="payment-page__h2">Order summary</h2>
         <p className="payment-page__customer">
-          {checkoutCustomer.name} · {checkoutCustomer.phone} ·{' '}
-          {checkoutCustomer.orderType === 'pickup' ? 'Pickup' : 'Dine-in'}
+          {summaryCustomer ? (
+            <>
+              {summaryCustomer.name} · {summaryCustomer.phone} ·{' '}
+              {summaryCustomer.orderType === 'pickup' ? 'Pickup' : 'Dine-in'}
+            </>
+          ) : (
+            <>— · — · —</>
+          )}
         </p>
         <ul className="payment-page__lines">
           {lines.map((line) => (
